@@ -1,0 +1,13 @@
+<html>
+<div>
+	<h1><a href="">Nikolay</a></h1>
+</div>
+{% for post in posts %}
+	<div>
+		<data>{{ post.published_date }}</data>
+		<h1><a href="">{{ post.title }}</a></h1>
+		<p>{{ post.text|linebreaksbr }}</p>	
+	</div>
+	
+{% endfor %}
+</html>
